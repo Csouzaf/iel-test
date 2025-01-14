@@ -12,7 +12,6 @@ C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\bin\Debug\net8.0\Azure.Core.d
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\bin\Debug\net8.0\Humanizer.dll
-C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\bin\Debug\net8.0\System.Web.Cors.dll
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -123,6 +122,7 @@ C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\obj\Debug\net8.0\testeiel.csp
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\obj\Debug\net8.0\testeiel.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\obj\Debug\net8.0\testeiel.RazorAssemblyInfo.cache
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\obj\Debug\net8.0\testeiel.RazorAssemblyInfo.cs
+C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\obj\Debug\net8.0\testeiel.sourcelink.json
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\obj\Debug\net8.0\staticwebassets\msbuild.testeiel.Microsoft.AspNetCore.StaticWebAssets.props
@@ -139,3 +139,16 @@ C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\obj\Debug\net8.0\refint\teste
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\obj\Debug\net8.0\testeiel.pdb
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\obj\Debug\net8.0\testeiel.genruntimeconfig.cache
 C:\Users\csouz\OneDrive\Área de Trabalho\testeiel\obj\Debug\net8.0\ref\testeiel.dll
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\testeiel.csproj.AssemblyReference.cache
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\testeiel.GeneratedMSBuildEditorConfig.editorconfig
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\testeiel.AssemblyInfoInputs.cache
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\testeiel.AssemblyInfo.cs
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\testeiel.csproj.CoreCompileInputs.cache
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\testeiel.MvcApplicationPartsAssemblyInfo.cs
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\testeiel.MvcApplicationPartsAssemblyInfo.cache
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\testeiel.RazorAssemblyInfo.cache
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\testeiel.RazorAssemblyInfo.cs
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\testeiel.sourcelink.json
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\testeiel.dll
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\refint\testeiel.dll
+d:\Arquivos e Programas\testeiel\obj\Debug\net8.0\testeiel.pdb

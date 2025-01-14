@@ -1,6 +1,7 @@
 
 
 using Microsoft.EntityFrameworkCore;
+using testeiel.Models;
 
 namespace testeiel.Data
 {
@@ -10,5 +11,7 @@ namespace testeiel.Data
         public AppDbContext(DbContextOptions options) : base(options)
         {
         }
+
+       public DbSet<Estudante> estudante;
     }
 }
