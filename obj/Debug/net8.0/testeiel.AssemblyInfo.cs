@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("testeiel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d57648dfb66f8795ca043e897c82e3406ea240bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73eb29086ad29eb5135b96dac83f491b4830e51a")]
 [assembly: System.Reflection.AssemblyProductAttribute("testeiel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("testeiel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

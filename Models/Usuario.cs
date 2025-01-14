@@ -11,7 +11,7 @@ namespace testeiel.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
         
-        public Guid IdEstudante { get; set; }
+        public Guid EstudanteId { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VLlGsLhlTpU=",
-  "success": false,
-  "projectFilePath": "D:\\Arquivos e Programas\\testeiel\\testeiel.csproj",
+  "dgSpecHash": "Zhr5RH8G77M=",
+  "success": true,
+  "projectFilePath": "d:\\Arquivos e Programas\\testeiel\\testeiel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\csouz\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\csouz\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
@@ -123,15 +123,5 @@
     "C:\\Users\\csouz\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.11\\microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
     "C:\\Users\\csouz\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.11\\microsoft.netcore.app.host.win-x64.8.0.11.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1102",
-      "level": "Error",
-      "message": "Unable to find package AutoMapper.Extensions.Microsoft.DependencyInjection with version (>= 13.0.1)\r\n  - Found 26 version(s) in nuget.org [ Nearest version: 12.0.1 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages",
-      "libraryId": "AutoMapper.Extensions.Microsoft.DependencyInjection",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

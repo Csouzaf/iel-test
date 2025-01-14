@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Arquivos e Programas\\testeiel\\testeiel.csproj": {}
+    "d:\\Arquivos e Programas\\testeiel\\testeiel.csproj": {}
   },
   "projects": {
-    "D:\\Arquivos e Programas\\testeiel\\testeiel.csproj": {
+    "d:\\Arquivos e Programas\\testeiel\\testeiel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Arquivos e Programas\\testeiel\\testeiel.csproj",
+        "projectUniqueName": "d:\\Arquivos e Programas\\testeiel\\testeiel.csproj",
         "projectName": "testeiel",
-        "projectPath": "D:\\Arquivos e Programas\\testeiel\\testeiel.csproj",
+        "projectPath": "d:\\Arquivos e Programas\\testeiel\\testeiel.csproj",
         "packagesPath": "C:\\Users\\csouz\\.nuget\\packages\\",
-        "outputPath": "D:\\Arquivos e Programas\\testeiel\\obj\\",
+        "outputPath": "d:\\Arquivos e Programas\\testeiel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\csouz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,10 +46,6 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "AutoMapper": {
-              "target": "Package",
-              "version": "[13.0.1, )"
-            },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[13.0.1, )"
             },
