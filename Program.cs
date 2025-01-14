@@ -1,4 +1,5 @@
 using testeiel.Security.DTOs;
+using testeiel.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddAutoMapper(typeof(AutoMapperPerfil));
+
+builder.Services.AddScoped<RelatorioRepository, RelatorioService>();
+builder.Services.AddScoped<HomeRepository, HomeService>();
+builder.Services.AddScoped<EstudanteRepository, EstudanteService>();
 
 var app = builder.Build();
 

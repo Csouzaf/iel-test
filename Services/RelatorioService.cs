@@ -1,6 +1,6 @@
 namespace testeiel.Services
 {
-    public class RelatorioService
+    public class RelatorioService : RelatorioRepository
     {
         
     }

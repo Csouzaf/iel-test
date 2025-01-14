@@ -1,6 +1,6 @@
 namespace testeiel.Services
 {
-    public class EstudanteService
+    public class EstudanteService : EstudanteRepository
     {
         
     }
