@@ -4,11 +4,11 @@ using testeiel.Models;
 
 namespace testeiel.Controllers;
 
-public class HomeController : Controller
+public class RelatorioController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<RelatorioController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public RelatorioController(ILogger<RelatorioController> logger)
     {
         _logger = logger;
     }

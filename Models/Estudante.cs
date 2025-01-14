@@ -40,5 +40,9 @@ namespace testeiel.Models
         [Required]
         public string? NomeCurso { get; set; }
 
+        public string? Email { get; set; }
+
+        public string? Cep { get; set; }
+
     }
 }
