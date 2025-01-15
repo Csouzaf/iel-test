@@ -22,6 +22,7 @@ builder.Services.AddScoped<IRelatorioRepository, RelatorioService>();
 builder.Services.AddScoped<IHomeRepository, HomeService>();
 builder.Services.AddScoped<IEstudanteRepository, EstudanteService>();
 builder.Services.AddScoped<IApiCepRepository, ApiCepService>();
+builder.Services.AddScoped<IUsuarioRepository, UsuarioService>();
 
 var app = builder.Build();
 
