@@ -2,10 +2,11 @@ using System.Text.Json;
 using AutoMapper;
 using testeiel.Data;
 using testeiel.Models;
+using testeiel.Repository;
 
 namespace testeiel.Services
 {
-    public class ApiCepService : ApiCepRepository
+    public class ApiCepService : IApiCepRepository
     {
         private readonly AppDbContext _appDbContext;
 

@@ -1,21 +1,28 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using testeiel.Models;
+using testeiel.Repository;
 using testeiel.Services;
 
 namespace testeiel.Controllers;
 
 [ApiController]
-[Route("cep")]
+[Route("endereco")]
 public class EnderecoController : Controller
 {
 
-    private readonly ApiCepService apiCepService;
+    private readonly IApiCepRepository _apiCepService;
 
+    public EnderecoController(IApiCepRepository apiCepRepository)
+    {
+        _apiCepService = apiCepRepository;
+    }
 
     [HttpGet("{cep}")]
-    public async Task<List<Endereco>> BuscarPeloCep([FromRoute] string cep)
+    public async Task<ActionResult<List<Endereco>>> BuscarPeloCep([FromRoute] string cep)
     {
-        return await apiCepService.BuscarEnderecoPeloCep(cep);
+        return Ok(await _apiCepService.BuscarEnderecoPeloCep(cep));
     }
+  
+   
 }

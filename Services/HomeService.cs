@@ -1,6 +1,8 @@
+using testeiel.Repository;
+
 namespace testeiel.Services
 {
-    public class HomeService : HomeRepository
+    public class HomeService : IHomeRepository
     {
         
     }

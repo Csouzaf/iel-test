@@ -1,8 +1,8 @@
 using testeiel.Models;
 
-namespace testeiel.Services
+namespace testeiel.Repository
 {
-    public interface ApiCepRepository
+    public interface IApiCepRepository
     {
         Task<List<Endereco>> BuscarEnderecoPeloCep(string cep);
     }

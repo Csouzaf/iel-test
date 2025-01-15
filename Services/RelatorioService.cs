@@ -1,6 +1,8 @@
+using testeiel.Repository;
+
 namespace testeiel.Services
 {
-    public class RelatorioService : RelatorioRepository
+    public class RelatorioService : IRelatorioRepository
     {
         
     }
