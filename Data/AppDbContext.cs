@@ -14,6 +14,8 @@ namespace testeiel.Data
         }
 
        public DbSet<Estudante> estudante;
+
+       public DbSet<Usuario> usuario;
      
       
     }

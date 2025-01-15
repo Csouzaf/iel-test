@@ -6,6 +6,10 @@ namespace testeiel.Repository
     {
         List<Estudante> ListarTodos();
 
-        Estudante BuscarPeloNome(string nome);
+        Estudante Criar(Estudante estudante);
+
+        bool Deletar(int id);
+
+      
     }
 }

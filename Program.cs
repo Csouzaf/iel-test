@@ -1,4 +1,7 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using testeiel.Data;
 using testeiel.Repository;
 using testeiel.Security.DTOs;
@@ -30,6 +33,43 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
+builder.Services.AddCors();
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.AddAuthentication(options =>
+    {
+        
+        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultForbidScheme = JwtBearerDefaults.AuthenticationScheme;
+
+    })
+    .AddJwtBearer(options =>
+    {
+       string masterKey = "66bfde1acdd9b8c228a8b8d66100c5734188d64d917dd5c5bfbbd92b39b5a0cc";
+        options.SaveToken = true;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = false,
+            ValidateLifetime = true,
+            ValidateAudience = false,
+  
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Convert.FromHexString(masterKey)),
+
+            ClockSkew = TimeSpan.Zero
+        };
+    });
+
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddSession();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

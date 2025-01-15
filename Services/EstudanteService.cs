@@ -2,6 +2,7 @@ using AutoMapper;
 using testeiel.Data;
 using testeiel.Models;
 using testeiel.Repository;
+using testeiel.Security.Services;
 
 namespace testeiel.Services
 {
@@ -9,12 +10,15 @@ namespace testeiel.Services
     {
         private readonly AppDbContext _appDbContext;
 
+        private readonly UsuarioAutenticadoService _usuarioAutenticadoService;
+
         private readonly IMapper _mapper;
-        
-        public EstudanteService(AppDbContext appDbContext, IMapper mapper)
+
+        public EstudanteService(UsuarioAutenticadoService usuarioAutenticadoService, AppDbContext appDbContext, IMapper mapper)
         {
             _appDbContext = appDbContext;
             _mapper = mapper;
+            _usuarioAutenticadoService = usuarioAutenticadoService;
         }
 
         public List<Estudante> ListarTodos()
@@ -22,18 +26,50 @@ namespace testeiel.Services
             return _appDbContext.estudante.ToList();
         }
 
-        public Estudante BuscarPeloNome(string nome)
+        public Estudante Criar(Estudante estudante)
         {
-            var estudante = new Estudante();
-
-            using (var contexto = _appDbContext)
+            if (_usuarioAutenticadoService.VerificarUsuarioAutenticado())
             {
-                estudante = contexto.estudante.FirstOrDefault(m => m.Nome == nome);
-
+                using (var contexto = _appDbContext)
+                {
+                    _appDbContext.estudante.Add(estudante);
+                    _appDbContext.SaveChanges();
+                   
+                    return estudante;
+                }
+                
             }
-            return estudante;
+
+            return null;
+
         }
 
-        
+        public bool Deletar(int id)
+        {
+            if (_usuarioAutenticadoService.VerificarUsuarioAutenticado())
+            {
+                
+                using (var contexto = _appDbContext)
+                {
+                    Estudante buscarEstudante = _appDbContext.estudante.Find(id);
+                    
+                    if (buscarEstudante != null) 
+                    {
+                        _appDbContext.estudante.Remove(buscarEstudante);
+                        _appDbContext.SaveChanges();
+                       return true;
+                   
+                    }
+                 
+                    return false;
+                }
+                
+            }
+
+            return false;
+
+        }
+
+
     }
 }

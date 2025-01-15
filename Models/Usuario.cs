@@ -4,44 +4,34 @@ using Microsoft.EntityFrameworkCore;
 
 namespace testeiel.Models
 {
-    [Table("estudante")]
-    public class Estudante
+    [Table("usuario")]
+    public class Usuario
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
         
-        [StringLength(100)]
-        [Required]
         public string? Nome { get; set; }
 
-        [Required]
         public string? Cpf { get; set; }
 
-        [StringLength(200)]
-        [Required]
         public string? Endereco { get; set; }
 
-        [Required]
         public string? Cidade { get; set; }
 
         [Required]
         public string? Estado { get; set; }
 
         [Required]
-        public List<string> InstituicaoEnsino { get; set; }
-
-        [Required]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime? DataConclusao { get; set; }
+        public DateTime? DataCriacao{ get; set; }
         
-        [StringLength(100)]
-        [Required]
-        public string? NomeCurso { get; set; }
-
         [Required]
         public string? Email { get; set; }
+
+        [Required]
+        public string? Senha { get; set; }
         
         public string? Cep { get; set; }
 

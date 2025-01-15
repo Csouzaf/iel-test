@@ -4,8 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace testeiel.Models
 {
-    [Table("estudante")]
-    public class Estudante
+ 
+    public class EstudanteResponse
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -42,7 +42,10 @@ namespace testeiel.Models
 
         [Required]
         public string? Email { get; set; }
-        
+
+        [Required]
+        public string? Senha { get; set; }
+
         public string? Cep { get; set; }
 
     }

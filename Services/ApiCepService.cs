@@ -18,9 +18,8 @@ namespace testeiel.Services
             _mapper = mapper;
         }
 
-        public async Task<List<Endereco>> BuscarEnderecoPeloCep(string cep)
+        public async Task<Endereco> BuscarEnderecoPeloCep(string cep)
         {
-            List<Endereco> enderecos = new List<Endereco>();
 
             var requisicao = new HttpRequestMessage(HttpMethod.Get, $"https://brasilapi.com.br/api/cep/v1/{cep}");
 
@@ -32,9 +31,8 @@ namespace testeiel.Services
 
                 if(objResposta != null) 
                 {
-                    enderecos.Add(objResposta);
-
-                    return enderecos;
+                  
+                    return objResposta;
                 }
 
                 else 

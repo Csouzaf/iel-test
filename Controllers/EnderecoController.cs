@@ -19,7 +19,7 @@ public class EnderecoController : Controller
     }
 
     [HttpGet("{cep}")]
-    public async Task<ActionResult<List<Endereco>>> BuscarPeloCep([FromRoute] string cep)
+    public async Task<ActionResult<Endereco>> BuscarPeloCep([FromRoute] string cep)
     {
         return Ok(await _apiCepService.BuscarEnderecoPeloCep(cep));
     }

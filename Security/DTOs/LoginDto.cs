@@ -1,14 +1,9 @@
 namespace testeiel.Security.DTOs
 {
-    public class CadastroService
+    public class LoginDto
     {
         public string Email { get; set; }
-
-        public string TipoUsuario { get; set; }
-
+        
         public string Senha { get; set; }
-
-      
-
     }
 }
