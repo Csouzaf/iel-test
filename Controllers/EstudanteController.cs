@@ -16,17 +16,39 @@ public class EstudanteController : Controller
         _estudanteRepository = estudanteRepository;
     }
 
+    [HttpGet]
+    public ActionResult<List<Estudante>> Listar()
+    {
+        var buscarTodosEstudante = _estudanteRepository.ListarTodos();
+        if ( buscarTodosEstudante != null)
+        {
+            return Ok(_estudanteRepository.ListarTodos());
+        }
+        return BadRequest("Erro ao buscar todos estudantes");
+       
+    }
+
     [HttpPost]
     public ActionResult<Estudante> Criar([FromBody] Estudante estudante)
     {
-        return Created("Sucesso", _estudanteRepository.Criar(estudante));
+        var buscarEstudante = _estudanteRepository.Criar(estudante);
+        if ( buscarEstudante != null)
+        {
+            return Created("Sucesso", _estudanteRepository.Criar(estudante));
+        }
+        return BadRequest("Erro ao criar estudante");
     }
 
     [HttpDelete("{id}")]
     public ActionResult Deletar([FromRoute] int id)
     {
         var buscarEstudante = _estudanteRepository.Deletar(id);
-        return NoContent();
+        if (buscarEstudante) 
+        {
+            return NoContent();
+        }
+
+         return BadRequest("Erro ao deletar estudante");
     }
 
     

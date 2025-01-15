@@ -23,7 +23,11 @@ namespace testeiel.Services
 
         public List<Estudante> ListarTodos()
         {
-            return _appDbContext.estudante.ToList();
+            if (_usuarioAutenticadoService.VerificarUsuarioAutenticado())
+            {
+                return _appDbContext.estudante.ToList();
+            }
+            return null;
         }
 
         public Estudante Criar(Estudante estudante)
@@ -52,7 +56,7 @@ namespace testeiel.Services
                 using (var contexto = _appDbContext)
                 {
                     Estudante buscarEstudante = _appDbContext.estudante.Find(id);
-                    
+
                     if (buscarEstudante != null) 
                     {
                         _appDbContext.estudante.Remove(buscarEstudante);
